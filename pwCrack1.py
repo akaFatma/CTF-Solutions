@@ -10,15 +10,16 @@ def str_xor(secret, key):
 ###############################################################################
 
 
-flag_enc = open('C:/Users/Administrator/Desktop/Pico/pw crack1/level1.flag.txt.enc', 'rb').read()
+flag_enc = open('C:/Users/Administrator/Desktop/Pico/pw crack1/level1.flag.txt.enc', 'rb').read() #put the file and script in the same folder
 
 
 
 def level_1_pw_check():
+    
     decryption = str_xor(flag_enc.decode(), "1e1a")
     
     return decryption
 
 
 
-print(level_1_pw_check())
+print(level_1_pw_check()) #should print out the flag
